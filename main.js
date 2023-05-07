@@ -13,6 +13,10 @@ document.getElementById("myBtn").addEventListener("click", displayform);
   }
 
   const form = document.querySelector('form');
+  form.addEventListener('post', (e) => {
+    e.preventDefault();
+    const fp = new FormPost(form);
+  } )
 
 
 
