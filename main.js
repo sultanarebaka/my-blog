@@ -13,8 +13,12 @@ document.getElementById("myBtn").addEventListener("click", displayform);
   }
 
   $("button").click(function(){
-    $.post("demo_test.asp", function(title, description){
-      alert("title: " + title + "\ndescription: " + description);
+    $.post("demo_test.asp", function(PostTitle, Body){
+
+      PostTitle:"Health",
+      Body:"Healthy Life",
+
+      alert("PostTitle: " + PostTitle + "\nBody: " + Body);
     });
   });
 
