@@ -16,6 +16,7 @@ document.getElementById("myBtn").addEventListener("click", displayform);
   form.addEventListener('post', (e) => {
     e.preventDefault();
     const fp = new FormPost(form);
+    console.log(fp);
   } )
 
 
