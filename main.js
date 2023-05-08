@@ -11,17 +11,18 @@ document.getElementById("myBtn").addEventListener("click", displayform);
     document.querySelector("#row").style.display = "block";
     document.querySelector("#btn").addEventListener("click", displaypost);
   }
-
+  $(document).ready(function(){
   $("button").click(function(){
-    $.post("demo_test.asp", function(PostTitle, Body){
+    $.post("demo_test.asp", {
 
       PostTitle:"Health",
-      Body:"Healthy Life",
-
+      Body:"Healthy Life"
+    },
+    function(PostTitle, Body){
       alert("PostTitle: " + PostTitle + "\nBody: " + Body);
     });
   });
-
+});
 
   
   
