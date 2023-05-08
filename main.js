@@ -12,14 +12,11 @@ document.getElementById("myBtn").addEventListener("click", displayform);
     document.querySelector("#btn").addEventListener("click", displaypost);
   }
 
-  const form = document.querySelector('form');
-  form.addEventListener('post', (e) => {
-    e.preventDefault();
-    const fp = new FormPost(form);
-    console.log(fp);
-  } )
-
-
+  $("button").click(function(){
+    $.post("demo_test.asp", function(title, description){
+      alert("title: " + title + "\ndescription: " + description);
+    });
+  });
 
 
   
