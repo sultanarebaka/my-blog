@@ -13,16 +13,11 @@ document.getElementById("myBtn").addEventListener("click", displayform);
   }
   $(document).ready(function(){
   $("button").click(function(){
-    $.post("demo_test.asp", {
-
-      PostTitle:"Health",
-      Body:"Healthy Life"
-    },
+    $.get("demo_test.asp", 
     function(PostTitle, Body){
       alert("PostTitle: " + PostTitle + "\nBody: " + Body);
     });
   });
-});
+  });
 
-  
   
