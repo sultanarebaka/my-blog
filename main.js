@@ -16,6 +16,8 @@ document.getElementById("myBtn").addEventListener("click", displayform);
     $.get("demo_test.asp", 
     function(PostTitle, Body){
       alert("PostTitle: " + PostTitle + "\nBody: " + Body);
+      console.log.get(PostTitle);
+      console.log.get(Body);
     });
   });
   });
